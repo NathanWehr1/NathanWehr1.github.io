@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" href="Project Structure.css">
+<style>
+	#container{ 
+		background-color: #606060 ; 
+}
+	#flexcontainer {
+		display:flex;
+		margin-top:20px;
+}
+	#ColOne {
+		float:left;
+		width:50%
+}
+	#ColTwo {
+		float:right;
+		display:block;
+		width: 50%;
+}
+	#flexFooter {
+		display:flex;
+}	
+	#footerComms {
+		display:block;
+		width:80%;
+		margin-left:20px;
+}
+	#footerEnd {
+		display:block;
+		float:right;
+		width:20%;
+}
+	nav {
+		display:inline-block;
+}
+	nav ul { 
+		background-color: #404040 ;
+		height: 56px;
+		margin: 0px ;
+		padding: 0px ;	
+}
+	nav ul li { 
+		display: inline ;
+		float: left ;
+		padding-right: 0px ;		
+}
+	nav ul li a { 
+		display: block ;
+		height: 40px ;
+		padding: 8px ;
+		background-color: #404040 ;
+		width : 120px ;
+		color:#FFFFFF;
+		text-align: center ;
+		text-decoration: none ;
+}
+	nav ul li a:hover{
+		background-color: #FFF ;
+		color: #404040;
+}
+	.active{
+		background-color: #FFF ;
+		color:#000;
+}
+	body { 
+		background-color: #404040 ; 
+}
+	header {  
+		color: #FFFFFF;
+		padding: 0px ;
+		margin: 0px ;
+		font-size: 50px ;
+		text-align: center ;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<header>Electronic Portfolio</header>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float: left;">  </p>
+<nav>
+	<ul style="list-style-type:none;">
+		<li><a href="Index.html" class="active">Home<br>Page</a></li>
+		<li><a href="japanese section.html">Japanese<br>Section</a></li>
+		<li><a href="Future Expectations.html">Future<br>Expectations</a></li>
+		<li><a href="Community Service.html">Community<br>Service</a></li>
+		<li><a href="Changes.html" >Suggest<br>Changes</a></li>
+	</ul> 
+</nav>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<div id="flexcontainer">
+	<section id="ColOne">
+	<h1 style="color:#FFF; text-align:center;"> Introduction </h1>
+		<p>I am Nathan Wehr. I am currently dual enrolled in Sigourney Jr/Sr highschool and Indianhills Community College.</p>
+		<p><img src="Pictures/SMHA-00281.jpg" style="width:100px; height:100px;"></p>
+	</section><!--End of ColOne-->
+	<aside id="ColTwo">
+		<h1 style="color:#FFF;"> What is this portfolio? </h1>
+			<p> This portfolio is a summary of things I have done and plans I have. </p>
+			<p> The portfolio is divided into four sections; Japanese, Expectations, Service, and Changes.<p>
+		<h1 style="color:#FFF;"> Japanese </h1>
+			<p> The Japanese section has what I have learned, am learning, and will learn in it.  It also includes a list of materials I have used. </p>
+		<h1 style="color:#FFF;"> Expectations </h1>
+			<p> The Expections section will have what I planned out for my future.  This includes planned major, college, and college schedule. </p>
+		<h1 style="color:#FFF;"> Service </h1>
+			<p> The Service Section will list the community service I have done during highschool. </p>
+		<h1 style="color:#FFF;"> Changes </h1>
+			<p> This is an area where you can suggest possible changes to the webpage.</p>
+	</aside><!--End of ColTwo-->
+	</div><!--end flex container -->
+		<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+	<footer id="flexFooter">
+		<div id="footerComms">
+			<h3> Contacts </h3>
+			<p> - Personal Email - nathanwehr111@gmail.com</p>
+			<p> - Highschool Email - nathanwehr@sigourneyschools.com</p>
+			<p> - College Email - Nathan_Wehr@stu.indianhills.edu</p>
+		</div><!-- End of footerComms -->
+		<div id="footerEnd">
+			<p style="background-color:#FFF; text-align:center; font-size:20px; padding:10px; margin-top:60px;"> Nathan Wehr </p>
+		</div><!-- End of footerEnd -->
+	</footer><!--End of flexFooter-->
+</div> <!-- end container -->
+</body>
+</html>
