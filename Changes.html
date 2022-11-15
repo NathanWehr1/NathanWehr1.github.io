@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- attempt to add this font; font-family:harashi, regular;, maybe include it in a japanese section-->
 <head>
-<title>Home Page</title>
+<title>Suggest Changes</title>
 <link rel="stylesheet" href="Project Structure.css">
 <style>
-#container{ 
-		background-color: #404040 ; 
-		
+	#container{ 
+		background-color: #606060 ; 	
 }
-#flexcontainer {
+	#flexcontainer {
 		display:flex;
 		margin-top:20px;
 }
-nav ul { 
+	#flexFooter {
+		display:flex;
+}	
+	#footerComms {
+		display:block;
+		width:80%;
+		margin-left:20px;
+}
+	#footerEnd {
+		display:block;
+		float:right;
+		width:20%;
+}
+	nav {
+		display:inline-block;
+}
+	nav ul { 
 		background-color: #404040 ;
 		height: 56px;
 		margin: 0px ;
 		padding: 0px ;	
 }
-nav ul li { 
+	nav ul li { 
 		display: inline ;
 		float: left ;
 		padding-right: 0px ;		
 }
-nav ul li a { 
+	nav ul li a { 
 		display: block ;
 		height: 40px ;
 		padding: 8px ;
@@ -34,90 +48,139 @@ nav ul li a {
 		text-align: center ;
 		text-decoration: none ;
  }
-nav ul li a:hover{
+	nav ul li a:hover{
 		background-color: #FFF ;
 		color: #404040;
 }
-.active {
-		background-color:#2aefe4;
+	.active{
+		background-color: #FFF ;
+		color:#000;
 }
-body { 
+	body { 
 		background-color: #404040 ; 
 }
-header {  
+	header {  
 		color: #FFFFFF;
 		padding: 0px ;
 		margin: 0px ;
 		font-size: 50px ;
 		text-align: center ;
 }
-legend {
+	legend {
 		color: #FFF;
 }
-.form1 {
-		
+	fieldset input {
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
 }
-.form2 {
+	fieldset label {
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
 }
-.form3 {
-
+	fieldset select {
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
 }
-footer { 
-		background-color: #404040 ;
-		color: #FFFFFF ;
+	fieldset input:focus {
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
 }
-#footerNav {
-		
+	fieldset label:focus {
+		display:block;
+		margin-top:20px;
+		margin-bottom:20px;
 }
-h1 {   }
-h2 {   }
-h3 {   }
-h4 {   }
-h5 {   }
-h6 {   }
+	fieldset select:focus {
+		display:block;
+		border-style:dashed;
+		margin-top:20px;
+		margin-bottom:20px;
+}
+	#form1 {
+		display:block;
+		margin-top:6px;
+		margin-bottom:6px;
+}
+	#form2 {
+		display:block;
+		margin-top:6px;
+		margin-bottom:6px;
+}
+	#form3 {
+		display:block;
+		margin-top:6px;
+		margin-bottom:6px;
+}
+	#form4 {
+		display:block;
+		margin-top:6px;
+		margin-bottom:6px;
+}
 </style>
 </head>
 <body>
+<div id="container">
 <header>Changes</header>
-<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float: left;">  </p>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float: left;">  </p>
 <nav>
 	<ul style="list-style-type:none;">
-		<li><a href="Home Page.html">Home<br>Page</a></li>
+		<li><a href="Index.html">Home<br>Page</a></li>
 		<li><a href="japanese section.html">Japanese<br>Section</a></li>
-		<li><a href="Highschool Honors.html">Highschool<br>Honors</a></li>
 		<li><a href="Future Expectations.html">Future<br>Expectations</a></li>
 		<li><a href="Community Service.html">Community<br>Service</a></li>
 		<li><a href="Changes.html" class="active">Suggest<br>Changes</a></li>
 	</ul> 
 </nav>
-<div id="container">
-
-
-	<p>testing<p>
-	<form >
-		<fieldset class="form1">
-			<legend>Color Scheme</legend>
-			<p>What changes do you think could be made to the color scheme?</p>
-			<input type="textarea" style="width:200px; height:200px; text-align:left;">
-			<p>Do you enjoy the current colors used?</p>
-			<select required>
-				<option>yes</option>
-				<option>no</option>
-			</select>
-		</fieldset>
-		<fieldset>
-			<legend> Page Layout </legend>
-			<p> What changes would you make to the page layout? </p>
-			<input type="">
-			
-		</fieldset>
-		<input type="submit">
-	</form>
-	
-<div id="footerNav">
-<p> communications </p>
-	<footer style="margin:0px;">  </footer>
-</div>
-</div>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<form method="post" action="Action.html" target="_blank">
+	<fieldset id="form1">
+		<legend>Color Scheme</legend>
+			<label for="Color Scheme">Do you enjoy the current colors used?</label>
+				<select name="Color Scheme" id="Color Scheme" required>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+			<label for="Color Thoughts">If no, in what way do you think the colors should be changed?</label>
+			<input type="textarea" name="Color Thoughts" id="Color Thoughts">
+	</fieldset><!--End of form1-->
+	<fieldset id="form2">
+		<legend> Page Layout </legend>
+		<label for="layout">Do you enjoy the current layout used?</label>
+		<select name="layout" id="layout" required>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+		<label for="layout thoughts"> If no, what changes would you make to the layout.  Please be specific to which page. </label>
+		<input type="textarea" name="layout thoughts" id="layout thoughts">
+	</fieldset><!--End of form2-->
+	<fieldset id="form3">
+		<legend> Extra Input </legend>
+		<label for="extra input"> Please list any extra ideas you may have regarding this website. </label>
+		<input type="textarea" name="extra input" id="extra input">
+	</fieldset><!--End of form3-->
+	<fieldset id="form4">
+		<legend> Email </legend>
+		<label for="email">Please provide an email for any fu.</label>
+		<input type="email" name="email" id="email" required>
+	</fieldset><!--End of form4-->
+	<input type="submit" style="border-radius:4px; height:40px; width:80px;">
+</form>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<footer id="flexFooter">
+		<div id="footerComms">
+			<h3> Contacts </h3>
+			<p> - Personal Email - nathanwehr111@gmail.com</p>
+			<p> - Highschool Email - nathanwehr@sigourneyschools.com</p>
+			<p> - College Email - Nathan_Wehr@stu.indianhills.edu</p>
+		</div><!-- End of footerComms -->
+		<div id="footerEnd">
+			<p style="background-color:#FFF; text-align:center; font-size:20px; padding:10px; margin-top:60px;"> Nathan Wehr </p>
+		</div><!-- End of footerEnd -->
+	</footer><!--End of flexFooter-->
+</div><!--End of Container-->
 </body>
 </html>

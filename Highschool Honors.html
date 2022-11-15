@@ -4,28 +4,38 @@
 <title> Highschool Honors </title>
 <link rel="stylesheet" href="Project Structure.css">
 <style>
-#container{ 
+	#container{ 
 		background-color: #404040 ; 
 }
-#flexcontainer {
+	#flexcontainer {
 		display:flex;
 		margin-top:20px;
 }
-body {
-
+	#flexFooter {
+		display:flex;
 }
-nav ul { 
+	#footerEnd {
+		display:inline;
+		float:right;
+}
+	#footerComms {
+		display:block;
+}
+	nav {
+		display:inline-block;
+}
+	nav ul { 
 		background-color: #2aefe4 ;
 		height: 56px;
 		margin: 0px ;
 		padding: 0px ;	
 }
-nav ul li { 
+	nav ul li { 
 		display: inline ;
 		float: left ;
 		padding-right: 0px ;
 }
-nav ul li a { 
+	nav ul li a { 
 		display: block ;
 		height: 40px ;
 		padding: 8px ;
@@ -35,42 +45,33 @@ nav ul li a {
 		text-align: center ;
 		text-decoration: none ;
  }
-nav ul li a:hover{
+	nav ul li a:hover{
 		background-color: #FFF ;
 		color: #404040;
 }
-.active {
-		background-color:#FF5733;
+	.active{
+		background-color: #FFF ;
+		color:#000;
 }
-body { 
+	body { 
 		background-color: #404040 ; 
 }
-header {  
+	header {  
 		color: #FFFFFF;
 		padding: 0px ;
 		margin: 0px ;
 		font-size: 50px ;
 		text-align: center ;
 }
-footer { 
-}
-p {  
-}
-h1 {   }
-h2 {   }
-h3 {   }
-h4 {   }
-h5 {   }
-h6 {   }
 </style>
 </head>
 <body>
 <div id="container">
 <header> Highschool Honors </header>
-<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float:left;">  </p><br>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float:left;">  </p><br>
 <nav>
 	<ul style="list-style-type:none; background-color: #002366 ;">
-		<li><a href="Home Page.html">Home<br>Page</a></li>
+		<li><a href="Index.html">Home<br>Page</a></li>
 		<li><a href="japanese section.html">Japanese<br>Section</a></li>
 		<li><a href="Highschool Honors.html" class="active">Highschool<br>Honors</a></li>
 		<li><a href="Future Expectations.html">Future<br>Expectations</a></li>
@@ -78,8 +79,22 @@ h6 {   }
 		<li><a href="Changes.html" >Suggest<br>Changes</a></li>
 	</ul> 
 </nav>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<div id="flexcontainer">
 
 
-</div>
+</div><!-- End of flexcontainer -->
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<footer id="flexFooter">
+	<div id="footerComms">
+		<p>Personal Email - nathanwehr111@gmail.com</p>
+		<p>Highschool Email - nathanwehr@sigourneyschools.com</p>
+		<p>College Email - Nathan_Wehr@stu.indianhills.edu</p>
+	</div><!--End of footerComms-->
+	<div id="footerEnd">
+		<p> Nathan Wehr </p>
+	</div><!--End of footerEnd-->
+</footer><!--End of flexFooter-->
+</div><!--End of container-->
 </body>
 </html>

@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- attempt to add this font; font-family:harashi, regular;, maybe include it in a japanese section-->
 <head>
-<title>Home Page</title>
+<title>Future Expectations</title>
 <link rel="stylesheet" href="Project Structure.css">
 <style>
-#container{ 
-		background-color: #404040 ; 
+	#container{ 
+		background-color: #606060 ; 
 }
-#flexcontainer {
+	body{
+		background-color:#404040;
+}
+	#flexcontainer {
 		display:flex;
-		margin-top:20px;
 }
-body {
-
+	#ColOne {
+		float:left;
+		width:50%
+		display:block;
+		
 }
-nav ul { 
+	#ColTwo {
+		float:right;
+		display:block;
+		width: 50%;
+}
+	#ColThree {
+		width:100%;
+		display:block;
+}
+	#flexFooter {
+		display:flex;
+}	
+	#footerComms {
+		display:block;
+		width:80%;
+		margin-left:20px;
+}
+	#footerEnd {
+		display:block;
+		float:right;
+		width:20%;
+}
+	#tableContainer {
+		display:flex;
+}
+	nav {
+		display:inline-block;
+}
+	nav ul { 
 		background-color: #2aefe4 ;
 		height: 56px;
 		margin: 0px ;
 		padding: 0px ;	
 }
-nav ul li { 
+	nav ul li { 
 		display: inline ;
 		float: left ;
 		padding-right: 0px ;		
 }
-nav ul li a { 
+	nav ul li a { 
 		display: block ;
 		height: 40px ;
 		padding: 8px ;
@@ -36,105 +68,123 @@ nav ul li a {
 		text-align: center ;
 		text-decoration: none ;
  }
-nav ul li a:hover{
+	nav ul li a:hover{
 		background-color: #FFF ;
 		color: #404040;
 }
-.active {
-		background-color:#2aefe4;
+	.active{
+		background-color: #FFF ;
+		color:#000;
 }
-body { 
-		background-color: #404040 ; 
-}
-header {  
+	header {  
 		color: #FFFFFF;
 		padding: 0px ;
 		margin: 0px ;
 		font-size: 50px ;
 		text-align: center ;
 }
-table {
-		border-style:solid;
+	table {
+		border-style:none;
 		border-collapse:collapse;
+		display: block;
+		width:100%;
 }
-th, td {
-	color: #FFF;
-	border-style:solid;
-	padding: 5px;
+	th, td {
+		font-size :12px;
+		color: #FFF;
+		border-style:solid;
+		padding: 5px;
 }
-footer { 
-		background-color: #404040 ;
-		color: #FFFFFF ;
-}
-p {  
-		color: #FFFFFF ; 
-		margin: 100px ;
-		font-family:castellar, Serif
-}
-h1 {   }
-h2 {   }
-h3 {   }
-h4 {   }
-h5 {   }
-h6 {   }
 </style>
 </head>
 <body>	
 <div id="container">
 <header> Future Expectations </header>
-<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float: left;">  </p>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px; float: left;">  </p>
 <nav>
 	<ul style="list-style-type:none; background-color: #000 ;">
-		<li><a href="Home Page.html">Home<br>Page</a></li>
+		<li><a href="Index.html">Home<br>Page</a></li>
 		<li><a href="japanese section.html">Japanese<br>Section</a></li>
-		<li><a href="Highschool Honors.html">Highschool<br>Honors</a></li>
 		<li><a href="Future Expectations.html" class="active">Future<br>Expectations</a></li>
 		<li><a href="Community Service.html">Community<br>Service</a></li>
 		<li><a href="Changes.html" >Suggest<br>Changes</a></li>
 	</ul> 
 </nav>
-
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<div id="tableContainer">
+<article id="ColThree">
+	<table>
+	<caption style="text-align:left; color: #FFF; font-size:30px; "> Course Table</caption>
+		<tr>
+			<th> </th>
+			<th> Term 1 </th>
+			<th> Term 2 </th>
+			<th> Term 3 </th>
+			<th> Term 4 </th>
+		</tr>
+		<tr>
+			<td> Highschool Junior </td>
+			<td> College Algebra<br>Composition 1 </td>
+			<td> College Algebra/Statistics<br>Composition 2</td>
+			<td> Statistics<br>Public Speaking</td>
+			<td>  Summer </td>
+		</tr>
+		<tr>
+			<td> Highschool Senior </td>
+			<td> Beginning&nbspWeb&nbspPage&nbspDevelopment<br>Calculus 1<br>Introduction to Psychology<br>Introduction to Computers </td>
+			<td> Introduction&nbspto&nbspDatabase&nbspConcepts<br>User Experience Design </td>
+			<td> Introduction&nbspto&nbspProgramming&nbspLogic</td>
+			<td> Cobol<br>Java<br>Quality&nbspAssurance </td>
+		</tr>
+		<tr>
+			<td> College Freshman </td>
+			<td> Java 2<br>C#<br>JavaScript<br>Emphasis </td>
+			<td> Java 3<br>Emphasis<br> </td>
+			<td> Intro to Business Analysis<br>Python with Data Structures<br>Emphasis</td>
+			<td> Advanced&nbsp.Net&nbspProgrammming<br>Field Projects<br>Emphasis </td>
+		</tr>
+		<tr>
+			<td> College Sophomore</td>
+			<td> Advanced C# Programming<br>Science Course<br>Emphasis </td>
+			<td> Graduated</td>
+			<td> Graduated</td>
+			<td> Graduated</td>
+		</tr>
+	</table>
+</article><!--End of ColThree-->
+</div><!--End of tableContainer-->
+<div id="flexcontainer">
+<section id="ColOne">
+	<p> I plan to major in Software Development at Indian Hills Community College. </p>
 	
-
-<table>
-<caption style="text-align:left; color: #FFF;"> This is a table of peviously taken courses, currently taking courses, and courses I plan to take in the future.</caption>
-	<tr>
-		<th> </th>
-		<th> Term 1 </th>
-		<th> Term 2 </th>
-		<th> Term 3 </th>
-		<th> Term 4 </th>
-	</tr>
-	<tr>
-		<td> Highschool Junior </td>
-		<td> College Algebra<br>Composition 1 </td>
-		<td> College Algebra/Statistics<br>Composition 2</td>
-		<td> Statistics<br>Public Speaking</td>
-		<td>  Summer </td>
-	</tr>
-	<tr>
-		<td> Highschool Senior </td>
-		<td> Beginning&nbspWeb&nbspPage&nbspDevelopment<br>Calculus 1<br>Introduction to Psychology<br>Introduction to Computers </td>
-		<td> Introduction&nbspto&nbspDatabase&nbspConcepts<br>User Experience Design </td>
-		<td> Introduction&nbspto&nbspProgramming&nbspLogic</td>
-		<td> Cobol<br>Java<br>Quality&nbspAssurance </td>
-	</tr>
-	<tr>
-		<td> College Freshman </td>
-		<td> Java 2<br>C#<br>JavaScript<br>Emphasis </td>
-		<td> Java 3<br>Emphasis<br> </td>
-		<td> Intro to Business Analysis<br>Python with Data Structures<br>Emphasis</td>
-		<td> Advanced .Net Programmming<br>Field Projects<br>Emphasis </td>
-	</tr>
-	<tr>
-		<td> College Sophomore</td>
-		<td> Advanced C# Programming<br>Science Course<br>Emphasis </td>
-		<td> Graduated</td>
-		<td> Graduated</td>
-		<td>  Graduated</td>
-	</tr>
-</table>
-<footer style="margin:0px;"> Nathan Wehr </footer>
+	<p> The table outlines that course schedule I plan to take while I work towards that major. </p>
+	<img src="Pictures/IH Logo.jpg">
+</section><!--End of ColOne-->
+<aside id="ColTwo">
+	<h1 style="text-align:center; color:#FFF;"> Emphasis Options </h1>
+	<p style="text-align:center;"> The "Emphasis" area in the table correlates to one of the courses in the areas below. </p>
+	<h3 style="text-align:center; color:#FFF;"> Mobile Development Emphasis </h2>
+	<p style="text-align:center;"> Introduction to Mobile Development<br> Mobile Development<br>Advanced Mobile Development </p>
+	<h3 style="text-align:center; color:#FFF;"> Webpage Development Emphasis </h2>
+	<p style="text-align:center;"> Web Design and Management <br> Web Scripting <br> Introduction to Web Frameworks <br> PHP/APACHE/MYSQL </p>
+	<h3 style="text-align:center; color:#FFF;"> Mainframe Programming Emphasis</h2>
+	<p style="text-align:center;"> Database Programming With DB2 <br> Cobol 2 <br> cobol 3<br> Introduction to 4GL Programming </p>
+	<h3 style="text-align:center; color:#FFF;"> Emphasis Elective Courses </h2>
+	<p style="text-align:center;"> Business Essentials <br> Foundations to Entrepreneurship<br> Oracle Acadamy: Database Design <br> Project Management </p>
+</aside><!--End of ColTwo-->
+</div><!-- End of flexcontainer -->
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<footer id="flexFooter">
+		<div id="footerComms">
+			<h3> Contacts </h3>
+			<p> - Personal Email - nathanwehr111@gmail.com</p>
+			<p> - Highschool Email - nathanwehr@sigourneyschools.com</p>
+			<p> - College Email - Nathan_Wehr@stu.indianhills.edu</p>
+		</div><!-- End of footerComms -->
+		<div id="footerEnd">
+			<p style="background-color:#FFF; text-align:center; font-size:20px; padding:10px; margin-top:60px;"> Nathan Wehr </p>
+		</div><!-- End of footerEnd -->
+	</footer><!--End of flexFooter-->
 </div>
 </body>
 </html>

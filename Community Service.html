@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- attempt to add this font; font-family:harashi, regular;, maybe include it in a japanese section-->
 <head>
-<title>Home Page</title>
+<title>Community Service</title>
 <link rel="stylesheet" href="Project Structure.css">
 <style>
-#container{ 
-		background-color: #404040 ; 
+	#container{ 
+		background-color: #606060 ; 
 }
-#flexcontainer {
+	#flexcontainer {
 		display:flex;
 		margin-top:20px;
 }
-body {
-
+	#ColOne {
+		float:left;
+		width:50%
 }
-nav ul { 
+	#ColTwo {
+		float:right;
+		display:block;
+		width: 50%;
+}
+	#flexFooter {
+		display:flex;
+}	
+	#footerComms {
+		display:block;
+		width:80%;
+		margin-left:20px;
+}
+	#footerEnd {
+		display:block;
+		float:right;
+		width:20%;
+}
+	#ListMargin li {
+		margin-top:20px;
+}
+	nav {
+		display:inline-block;
+}
+	nav ul { 
 		background-color: #2aefe4 ;
 		height: 56px;
 		margin: 0px ;
 		padding: 0px ;	
 }
-nav ul li { 
+	nav ul li { 
 		display: inline ;
 		float: left ;
 		padding-right: 0px ;		
 }
-nav ul li a { 
+	nav ul li a { 
 		display: block ;
 		height: 40px ;
 		padding: 8px ;
@@ -36,83 +60,111 @@ nav ul li a {
 		text-align: center ;
 		text-decoration: none ;
  }
-nav ul li a:hover{
+	nav ul li a:hover{
 		background-color: #FFF ;
 		color: #404040;
 }
-.active {
-		background-color:#00FF00;
+	.active{
+		background-color: #FFF ;
+		color:#000;
 }
-body { 
+	body { 
 		background-color: #404040 ; 
 }
-header {  
+	header {  
 		color: #FFFFFF;
 		padding: 0px ;
 		margin: 0px ;
 		font-size: 50px ;
 		text-align: center ;
 }
-section {
-		display: flex;
-		float: left;
-		width:60%;
-}
-aside {
-		display: flex;
-		float: right;
-		width: 40%;
-{
-footer { 
-		background-color: #404040 ;
-		color: #FFFFFF ;
-}
-h1 {   }
-h2 {   }
-h3 {   }
-h4 {   }
-h5 {   }
-h6 {   }
 </style>
 </head>
 <body>
 <div id="container">
 <header>Community Service</header>
-<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;">  </p>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;">  </p>
 <nav>
 	<ul style="list-style-type:none; background-color: #000 ;">
-		<li><a href="Home Page.html">Home<br>Page</a></li>
+		<li><a href="Index.html">Home<br>Page</a></li>
 		<li><a href="japanese section.html">Japanese<br>Section</a></li>
-		<li><a href="Highschool Honors.html">Highschool<br>Honors</a></li>
 		<li><a href="Future Expectations.html">Future<br>Expectations</a></li>
 		<li><a href="Community Service.html" class="active">Community<br>Service</a></li>
 		<li><a href="Changes.html" >Suggest<br>Changes</a></li>
 	</ul> 
 </nav>
-	<div id="flexcontainer">
-	<section style="display:block;">
-		<h2 style="text-align:center;">Key Club</h2>
-		
-		<h3> Highway Clean-ups</h3>
-			Dates and Locations
-			<ul>
-				<li>  </li>
-				<li>  </li>
-				<li>  </li>
-			</ul>
-		<h3> Concession Stands </h3>
-		
-		<h3> Lock-Ins </h3>
-	</section>
-	
-	<aside style="display:block;">
-	<h1> Orginaizations Served </h1>
-	<p> Key Club </p>
-	<p> 4-H </p>
-	<p> County Council </p>
-	</aside>
-	</div>
-<footer style="margin:0px;"> Nathan Wehr </footer>
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<div id="flexcontainer">
+<section id="ColOne">
+		<p>This is a rough list of community service hours I have obtained during highschool.</p>
+		<p>I only have the information of hours for Key Club, as that is the only one I have documented.</p>
+		<p>I have 102 Hours of community service, however, this number does not include any service from other orginizations besides Key Club nor does it include recent events for Key Club that are not yet documented. </p>
+	<div id="ListMargin">
+		<h2 style="text-align:center; color:#FFF;">Key Club</h2>
+			<h3> Events and Hours earned</h3>
+				<ul>
+					<li> Highway Clean-Up - 4 Hours</li>
+					<li> Trick or Treat for Unicef - 3 Hours </li>
+					<li> Charity Dance - 4 Hours </li>
+					<li> School Clean-Up and Lock In - 8 Hours </li>
+					<li> School Concessions - 3 Hours </li>
+					<li> School Concessions - 5 Hours</li>
+					<li> School Concessions - 5 Hours </li>
+					<li> School Concessions - 3 Hours</li>
+					<li> School Concessions - 5 Hours</li>
+					<li> School Concessions - 5 Hours</li>
+					<li> School Clean-Up and Lock In - 10 Hours </li>
+					<li> Iowa Shelter House Visit and Donations - 3 Hours </li>
+					<li> Highway Clean-Up - 4 Hours </li>
+					<li> Trick or Treat for Unicef - 5 Hours </li>
+					<li> School Clean-Up and Lock In - 3 Hours </li>
+					<li> School Concessions - 6 Hours </li>
+					<li> Highway Clean-Up - 4 Hours </li>
+					<li> Trick or Treat for Unicef - 3 Hours </li>
+					<li> Charity Dance - 2 Hours </li>
+					<li> School Clean-Up and Lock In - 6 Hours </li>
+					<li> Editing and Originaization of Music for School Prom - 7 Hours </li>
+					<li> Highway Clean-Up - 4 Hours </li>
+				</ul>
+		<h2 style="text-align:center; color:#FFF;"> 4-H </h2>
+			<h3> Events </h3>
+				<ul>
+					<li> Fair Setup </li>
+					<li> Fair Clean-up </li>
+				</ul>
+		<h2 style="text-align:center; color:#FFF;"> County Council </h2>
+			<h3> Events </h3>
+				<ul>
+					<li> Meals From The Heartland </li>
+					<li> Children's Halloween Party </li>
+					<li> 4-H Awards Night </li>
+					<li> Meals From The Heartland </li>
+					<li> Children's Halloween Party </li>
+					<li> Planted Flowers Along Town Square </li>	
+				</ul>
+	</div><!--End of ListMargin-->
+</section><!--End of ColOne-->
+<aside id="ColTwo">
+	<h1 style="text-align:center; color:#FFF;"> Orginaizations Served </h1>
+	<h2> Key Club </h2>
+		<img src="Pictures/KeyClub Logo.jpg">
+	<h2> 4-H </h2>
+		<img src="Pictures/4-H Logo.jpg">
+	<h2> County Council </h2>
+</aside><!--End of ColTwo-->
+</div> <!-- End of flexcontainer -->
+	<p style="height: 5px; width:100%; background-color: #FFFFFF; margin: 10px 0px 10px 0px; padding: 0px;  display:block;">  </p>
+<footer id="flexFooter">
+		<div id="footerComms">
+			<h3> Contacts </h3>
+			<p> - Personal Email - nathanwehr111@gmail.com</p>
+			<p> - Highschool Email - nathanwehr@sigourneyschools.com</p>
+			<p> - College Email - Nathan_Wehr@stu.indianhills.edu</p>
+		</div><!-- End of footerComms -->
+		<div id="footerEnd">
+			<p style="background-color:#FFF; text-align:center; font-size:20px; padding:10px; margin-top:60px;"> Nathan Wehr </p>
+		</div><!-- End of footerEnd -->
+	</footer><!--End of flexFooter-->
 </div>
 </body>
 </html>
